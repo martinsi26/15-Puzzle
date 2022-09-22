@@ -6,15 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -47,8 +38,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="75dp"
-                android:layout_weight="1"
+                android:layout_height="125dp"
                 android:orientation="horizontal">
 
                 <Space
@@ -58,8 +48,8 @@
 
                 <Button
                     android:id="@+id/gameButton1"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
                     android:text="1"
                     android:textSize="32sp" />
 
@@ -70,8 +60,8 @@
 
                 <Button
                     android:id="@+id/gameButton2"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
                     android:text="2"
                     android:textSize="32sp" />
 
@@ -82,8 +72,8 @@
 
                 <Button
                     android:id="@+id/gameButton3"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
                     android:text="3"
                     android:textSize="32sp" />
 
@@ -94,8 +84,8 @@
 
                 <Button
                     android:id="@+id/gameButton4"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
                     android:text="4"
                     android:textSize="32sp" />
 
@@ -105,10 +95,14 @@
                     android:layout_weight="2" />
             </LinearLayout>
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1" />
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="75dp"
-                android:layout_weight="1"
+                android:layout_height="125dp"
                 android:orientation="horizontal">
 
                 <Space
@@ -118,8 +112,8 @@
 
                 <Button
                     android:id="@+id/gameButton5"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
                     android:text="5"
                     android:textSize="32sp" />
 
@@ -130,8 +124,8 @@
 
                 <Button
                     android:id="@+id/gameButton6"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
                     android:text="6"
                     android:textSize="32sp" />
 
@@ -142,8 +136,8 @@
 
                 <Button
                     android:id="@+id/gameButton7"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
                     android:text="7"
                     android:textSize="32sp" />
 
@@ -154,8 +148,8 @@
 
                 <Button
                     android:id="@+id/gameButton8"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
                     android:text="8"
                     android:textSize="32sp" />
 
@@ -165,10 +159,14 @@
                     android:layout_weight="2" />
             </LinearLayout>
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1" />
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="75dp"
-                android:layout_weight="1"
+                android:layout_height="125dp"
                 android:orientation="horizontal">
 
                 <Space
@@ -178,8 +176,8 @@
 
                 <Button
                     android:id="@+id/gameButton9"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
                     android:text="9"
                     android:textSize="32sp" />
 
@@ -190,8 +188,8 @@
 
                 <Button
                     android:id="@+id/gameButton10"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
                     android:text="10"
                     android:textSize="32sp" />
 
@@ -202,8 +200,8 @@
 
                 <Button
                     android:id="@+id/gameButton11"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
                     android:text="11"
                     android:textSize="32sp" />
 
@@ -214,8 +212,8 @@
 
                 <Button
                     android:id="@+id/gameButton12"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
                     android:text="12"
                     android:textSize="32sp" />
 
@@ -225,10 +223,14 @@
                     android:layout_weight="2" />
             </LinearLayout>
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1" />
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="75dp"
-                android:layout_weight="1"
+                android:layout_height="125dp"
                 android:orientation="horizontal">
 
                 <Space
@@ -238,8 +240,8 @@
 
                 <Button
                     android:id="@+id/gameButton13"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
                     android:text="13"
                     android:textSize="32sp" />
 
@@ -250,8 +252,8 @@
 
                 <Button
                     android:id="@+id/gameButton14"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
                     android:text="14"
                     android:textSize="32sp" />
 
@@ -262,8 +264,8 @@
 
                 <Button
                     android:id="@+id/gameButton15"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
                     android:text="15"
                     android:textSize="32sp" />
 
@@ -274,8 +276,8 @@
 
                 <Button
                     android:id="@+id/blankButton"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
                     android:textSize="32sp" />
 
                 <Space
