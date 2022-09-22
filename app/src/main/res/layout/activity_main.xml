@@ -29,6 +29,7 @@
                 android:id="@+id/titleText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
                 android:gravity="center|top"
                 android:text="15 Puzzle"
                 android:textSize="50sp" />
@@ -233,7 +234,7 @@
                 <Space
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="2" />
 
                 <Button
                     android:id="@+id/gameButton13"
@@ -245,7 +246,7 @@
                 <Space
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.5" />
+                    android:layout_weight="1" />
 
                 <Button
                     android:id="@+id/gameButton14"
@@ -257,7 +258,7 @@
                 <Space
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.6" />
+                    android:layout_weight="1" />
 
                 <Button
                     android:id="@+id/gameButton15"
@@ -269,14 +270,26 @@
                 <Space
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="4" />
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/blankButton"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:textSize="32sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
 
             </LinearLayout>
         </LinearLayout>
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="100dp" />
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
         <LinearLayout
             android:layout_width="match_parent"
