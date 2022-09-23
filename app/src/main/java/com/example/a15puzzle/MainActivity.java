@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button[] gameButtons = new Button[16];
+        Button[][] gameButtons = new Button[4][4];
         Button gameButton1 = findViewById(R.id.gameButton1);
         Button gameButton2 = findViewById(R.id.gameButton2);
         Button gameButton3 = findViewById(R.id.gameButton3);
@@ -34,22 +34,22 @@ public class MainActivity extends AppCompatActivity {
         Button gameButton16 = findViewById(R.id.blankButton);
         Button newGame = findViewById(R.id.newGame);
 
-        gameButtons[0] = gameButton1;
-        gameButtons[1] = gameButton2;
-        gameButtons[2] = gameButton3;
-        gameButtons[3] = gameButton4;
-        gameButtons[4] = gameButton5;
-        gameButtons[5] = gameButton6;
-        gameButtons[6] = gameButton7;
-        gameButtons[7] = gameButton8;
-        gameButtons[8] = gameButton9;
-        gameButtons[9] = gameButton10;
-        gameButtons[10] = gameButton11;
-        gameButtons[11] = gameButton12;
-        gameButtons[12] = gameButton13;
-        gameButtons[13] = gameButton14;
-        gameButtons[14] = gameButton15;
-        gameButtons[15] = gameButton16;
+        gameButtons[0][0] = gameButton1;
+        gameButtons[0][1] = gameButton2;
+        gameButtons[0][2] = gameButton3;
+        gameButtons[0][3] = gameButton4;
+        gameButtons[1][0] = gameButton5;
+        gameButtons[1][1] = gameButton6;
+        gameButtons[1][2] = gameButton7;
+        gameButtons[1][3] = gameButton8;
+        gameButtons[2][0] = gameButton9;
+        gameButtons[2][1] = gameButton10;
+        gameButtons[2][2] = gameButton11;
+        gameButtons[2][3] = gameButton12;
+        gameButtons[3][0] = gameButton13;
+        gameButtons[3][1] = gameButton14;
+        gameButtons[3][2] = gameButton15;
+        gameButtons[3][3] = gameButton16;
 
         ViewListener viewListener = new ViewListener(gameButtons);
         newGame.setOnClickListener(viewListener);
