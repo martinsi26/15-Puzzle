@@ -50,6 +50,7 @@
                     android:id="@+id/gameButton1"
                     android:layout_width="125dp"
                     android:layout_height="125dp"
+                    android:alpha="100"
                     android:text="1"
                     android:textSize="32sp" />
 
@@ -62,6 +63,7 @@
                     android:id="@+id/gameButton2"
                     android:layout_width="125dp"
                     android:layout_height="125dp"
+                    android:alpha="100"
                     android:text="2"
                     android:textSize="32sp" />
 
@@ -74,6 +76,7 @@
                     android:id="@+id/gameButton3"
                     android:layout_width="125dp"
                     android:layout_height="125dp"
+                    android:alpha="100"
                     android:text="3"
                     android:textSize="32sp" />
 
@@ -86,6 +89,7 @@
                     android:id="@+id/gameButton4"
                     android:layout_width="125dp"
                     android:layout_height="125dp"
+                    android:alpha="100"
                     android:text="4"
                     android:textSize="32sp" />
 
@@ -114,6 +118,7 @@
                     android:id="@+id/gameButton5"
                     android:layout_width="125dp"
                     android:layout_height="125dp"
+                    android:alpha="99"
                     android:text="5"
                     android:textSize="32sp" />
 
@@ -126,6 +131,7 @@
                     android:id="@+id/gameButton6"
                     android:layout_width="125dp"
                     android:layout_height="125dp"
+                    android:alpha="99"
                     android:text="6"
                     android:textSize="32sp" />
 
@@ -138,6 +144,7 @@
                     android:id="@+id/gameButton7"
                     android:layout_width="125dp"
                     android:layout_height="125dp"
+                    android:alpha="99"
                     android:text="7"
                     android:textSize="32sp" />
 
@@ -150,6 +157,7 @@
                     android:id="@+id/gameButton8"
                     android:layout_width="125dp"
                     android:layout_height="125dp"
+                    android:alpha="99"
                     android:text="8"
                     android:textSize="32sp" />
 
@@ -178,6 +186,7 @@
                     android:id="@+id/gameButton9"
                     android:layout_width="125dp"
                     android:layout_height="125dp"
+                    android:alpha="98"
                     android:text="9"
                     android:textSize="32sp" />
 
@@ -190,6 +199,7 @@
                     android:id="@+id/gameButton10"
                     android:layout_width="125dp"
                     android:layout_height="125dp"
+                    android:alpha="98"
                     android:text="10"
                     android:textSize="32sp" />
 
@@ -202,6 +212,7 @@
                     android:id="@+id/gameButton11"
                     android:layout_width="125dp"
                     android:layout_height="125dp"
+                    android:alpha="98"
                     android:text="11"
                     android:textSize="32sp" />
 
@@ -214,6 +225,7 @@
                     android:id="@+id/gameButton12"
                     android:layout_width="125dp"
                     android:layout_height="125dp"
+                    android:alpha="98"
                     android:text="12"
                     android:textSize="32sp" />
 
@@ -242,6 +254,7 @@
                     android:id="@+id/gameButton13"
                     android:layout_width="125dp"
                     android:layout_height="125dp"
+                    android:alpha="97"
                     android:text="13"
                     android:textSize="32sp" />
 
@@ -254,6 +267,7 @@
                     android:id="@+id/gameButton14"
                     android:layout_width="125dp"
                     android:layout_height="125dp"
+                    android:alpha="97"
                     android:text="14"
                     android:textSize="32sp" />
 
@@ -266,6 +280,7 @@
                     android:id="@+id/gameButton15"
                     android:layout_width="125dp"
                     android:layout_height="125dp"
+                    android:alpha="97"
                     android:text="15"
                     android:textSize="32sp" />
 
@@ -278,6 +293,7 @@
                     android:id="@+id/blankButton"
                     android:layout_width="125dp"
                     android:layout_height="125dp"
+                    android:alpha="97"
                     android:textSize="32sp" />
 
                 <Space

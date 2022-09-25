@@ -52,6 +52,22 @@ public class MainActivity extends AppCompatActivity {
         gameButtons[3][3] = gameButton16;
 
         ViewListener viewListener = new ViewListener(gameButtons);
+        gameButton1.setOnClickListener(viewListener);
+        gameButton2.setOnClickListener(viewListener);
+        gameButton3.setOnClickListener(viewListener);
+        gameButton4.setOnClickListener(viewListener);
+        gameButton5.setOnClickListener(viewListener);
+        gameButton6.setOnClickListener(viewListener);
+        gameButton7.setOnClickListener(viewListener);
+        gameButton8.setOnClickListener(viewListener);
+        gameButton9.setOnClickListener(viewListener);
+        gameButton10.setOnClickListener(viewListener);
+        gameButton11.setOnClickListener(viewListener);
+        gameButton12.setOnClickListener(viewListener);
+        gameButton13.setOnClickListener(viewListener);
+        gameButton14.setOnClickListener(viewListener);
+        gameButton15.setOnClickListener(viewListener);
+        gameButton16.setOnClickListener(viewListener);
         newGame.setOnClickListener(viewListener);
     }
 }
