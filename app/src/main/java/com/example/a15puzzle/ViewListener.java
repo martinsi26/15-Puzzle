@@ -24,7 +24,11 @@ public class ViewListener implements View.OnClickListener{
         for(int i = 0; i < _gameButtons.length; i++) {
             gameButtons[i] = _gameButtons[i];
         }
+
         Collections.shuffle(nums);
+        while(!checkSuitableNumbers()) {
+            Collections.shuffle(nums);
+        }
         int counter = 1;
         for(int row = 0; row < gameButtons.length; row++) {
             for(int col = 0; col < gameButtons[row].length; col++) {
@@ -37,8 +41,8 @@ public class ViewListener implements View.OnClickListener{
                 }
                 counter++;
             }
-            checkCorrectPosition();
         }
+        checkCorrectPosition();
     }
 
     public void checkEmptyAdjacent() {
@@ -115,6 +119,21 @@ public class ViewListener implements View.OnClickListener{
                 gameButtons[3][i].setBackgroundColor(color);
             }
         }
+    }
+
+    public boolean checkSuitableNumbers() {
+        int count = 0;
+        for(int i = 0; i < nums.size(); i++) {
+            for (int j = 0; j < nums.size(); j++) {
+                if (nums.get(i) > nums.get(j)) {
+                    count++;
+                }
+            }
+        }
+        if(count % 2 == 0) {
+            return true;
+        }
+        return false;
     }
 
     @Override
