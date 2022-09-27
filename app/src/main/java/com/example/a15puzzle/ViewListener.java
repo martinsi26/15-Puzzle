@@ -12,12 +12,16 @@ public class ViewListener implements View.OnClickListener{
 
     private Button[][] gameButtons = new Button[4][4];
     private ArrayList<Integer> nums;
+    private ArrayList<Integer> numbers;
     private ArrayList<Integer> adjacent;
     private int blankX;
     private int blankY;
 
     public ViewListener(Button[][] _gameButtons) {
         nums = new ArrayList<>();
+        for(int i = 1; i < 16; i++) {
+            numbers.add(i);
+        }
         for(int i = 1; i <= 16; i++) {
             nums.add(i);
         }
@@ -123,9 +127,9 @@ public class ViewListener implements View.OnClickListener{
 
     public boolean checkSuitableNumbers() {
         int count = 0;
-        for(int i = 0; i < nums.size(); i++) {
-            for (int j = 0; j < nums.size(); j++) {
-                if (nums.get(i) > nums.get(j)) {
+        for(int i = 0; i < numbers.size(); i++) {
+            for (int j = 0; j < numbers.size(); j++) {
+                if (numbers.get(i) > numbers.get(j)) {
                     count++;
                 }
             }
