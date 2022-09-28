@@ -1,7 +1,5 @@
 package com.example.a15puzzle;
 
-import android.graphics.Color;
-import android.graphics.Paint;
 import android.view.View;
 import android.widget.Button;
 
@@ -16,12 +14,12 @@ public class ViewListener implements View.OnClickListener{
     private ArrayList<Integer> adjacent;
     private int blankX;
     private int blankY;
+    private int count;
 
     public ViewListener(Button[][] _gameButtons) {
+        count = 0;
         nums = new ArrayList<>();
-        for(int i = 1; i < 16; i++) {
-            numbers.add(i);
-        }
+        numbers = new ArrayList<>();
         for(int i = 1; i <= 16; i++) {
             nums.add(i);
         }
@@ -30,14 +28,28 @@ public class ViewListener implements View.OnClickListener{
         }
 
         Collections.shuffle(nums);
+        numbers.clear();
+        for(int i = 0; i < nums.size(); i++) {
+            if(nums.get(i) != 0 && nums.get(i) != 16) {
+                numbers.add(nums.get(i));
+            }
+        }
+
         while(!checkSuitableNumbers()) {
             Collections.shuffle(nums);
+            numbers.clear();
+            for(int i = 0; i < nums.size(); i++) {
+                if(nums.get(i) != 0 && nums.get(i) != 16) {
+                    numbers.add(nums.get(i));
+                }
+            }
         }
-        int counter = 1;
+
+        int counter = 0;
         for(int row = 0; row < gameButtons.length; row++) {
             for(int col = 0; col < gameButtons[row].length; col++) {
-                if (nums.indexOf(counter) != 0) {
-                    gameButtons[row][col].setText(String.valueOf(nums.indexOf(counter)));
+                if (nums.get(counter) != 16) {
+                    gameButtons[row][col].setText(String.valueOf(nums.get(counter)));
                     gameButtons[row][col].setBackgroundColor(0xFFADD8E6);
                 } else {
                     gameButtons[row][col].setText("");
@@ -99,8 +111,8 @@ public class ViewListener implements View.OnClickListener{
                 if (Integer.parseInt(gameButtons[y][x].getText().toString()) == adjacent.get(i)) {
                     gameButtons[blankY][blankX].setText(gameButtons[y][x].getText());
                     gameButtons[blankY][blankX].setBackgroundColor(0xFFADD8E6);
-                    gameButtons[(int) y][(int) x].setText("");
-                    gameButtons[(int) y][(int) x].setBackgroundColor(0x00);
+                    gameButtons[y][x].setText("");
+                    gameButtons[y][x].setBackgroundColor(0x00);
                     break;
                 }
             }
@@ -126,9 +138,9 @@ public class ViewListener implements View.OnClickListener{
     }
 
     public boolean checkSuitableNumbers() {
-        int count = 0;
+        count = 0;
         for(int i = 0; i < numbers.size(); i++) {
-            for (int j = 0; j < numbers.size(); j++) {
+            for (int j = i; j < numbers.size(); j++) {
                 if (numbers.get(i) > numbers.get(j)) {
                     count++;
                 }
@@ -147,6 +159,21 @@ public class ViewListener implements View.OnClickListener{
             changeNumbers(view.getX(), view.getAlpha());
         } else if(view.getId() == R.id.newGame) {
             Collections.shuffle(nums);
+            numbers.clear();
+            for(int i = 0; i < nums.size(); i++) {
+                if(nums.get(i) != 0 && nums.get(i) != 16) {
+                    numbers.add(nums.get(i));
+                }
+            }
+            while(!checkSuitableNumbers()) {
+                Collections.shuffle(nums);
+                numbers.clear();
+                for(int i = 0; i < nums.size(); i++) {
+                    if(nums.get(i) != 0 && nums.get(i) != 16) {
+                        numbers.add(nums.get(i));
+                    }
+                }
+            }
             int counter = 1;
             for(int row = 0; row < gameButtons.length; row++) {
                 for(int col = 0; col < gameButtons[row].length; col++) {
