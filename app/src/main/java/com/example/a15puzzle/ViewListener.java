@@ -9,6 +9,8 @@ import java.util.Collections;
 /**
  * 15 Puzzle: creates a 4v4 puzzle game in which you order the numbers from 1 - 15
  *
+ * Enhancements: Checks if the solution is winnable with the algorithm
+ *
  * @author **** Simon Martin ****
  * @version **** 9/26/22 ****
  */
