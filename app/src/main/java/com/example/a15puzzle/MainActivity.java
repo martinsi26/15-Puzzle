@@ -8,6 +8,15 @@ import android.widget.Button;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+ * 15 Puzzle: creates a 4v4 puzzle game in which you order the numbers from 1 - 15
+ *
+ * Enhancements: Checks if the solution is winnable with the algorithm
+ *
+ * @author **** Simon Martin ****
+ * @version **** 9/26/22 ****
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -15,7 +24,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // created a 2d array for my buttons
         Button[][] gameButtons = new Button[4][4];
+
+        // initialized all 16 number buttons and reset button
         Button gameButton1 = findViewById(R.id.gameButton1);
         Button gameButton2 = findViewById(R.id.gameButton2);
         Button gameButton3 = findViewById(R.id.gameButton3);
@@ -34,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         Button gameButton16 = findViewById(R.id.blankButton);
         Button newGame = findViewById(R.id.newGame);
 
+        // added all the buttons to my 2d array
         gameButtons[0][0] = gameButton1;
         gameButtons[0][1] = gameButton2;
         gameButtons[0][2] = gameButton3;
@@ -51,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
         gameButtons[3][2] = gameButton15;
         gameButtons[3][3] = gameButton16;
 
+        // implemented the view listener class and added the buttons to it so the buttons
+        // will react to being clicked on.
         ViewListener viewListener = new ViewListener(gameButtons);
         gameButton1.setOnClickListener(viewListener);
         gameButton2.setOnClickListener(viewListener);
